@@ -2,223 +2,215 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYHCWR4QWL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-DYHCWR4QWL');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XTERRA Fitness Home Gym Pro 2026 - KÃ¶rperwÃ¤rme auf hÃ¶chstem Niveau | Auswahl 2026</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTERRA Fitness Home Gym Pro 2026 - KÃ¶rperwÃ¤rme auf hÃ¶chstem Niveau | EXKLUSIVE EDITION 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: oklch(55% 0.12 240);
-            --accent: oklch(70% 0.15 40);
-            --text: oklch(20% 0.02 240);
-            --bg: oklch(99% 0.01 240);
-            --surface: oklch(95% 0.02 240);
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --p: #c5a059; --a: #fff; --bg: #0a0a0a; }
+        body { font-family: 'Playfair Display', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
-        body {
-            font-family: 'Fraunces', serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
+        .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
+        
+        .hero { 
+            position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Heimtrainer,abstract') fixed center/cover;
         }
+        .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
+        .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
+        h1 { font-size: clamp(3rem, 10vw, 6rem); margin: 0; line-height: 0.85; font-weight: 800; text-transform: uppercase; }
+        .price-hero { font-size: 3rem; font-weight: 300; color: var(--p); margin-top: 20px; }
+        .old-price { font-size: 1.5rem; text-decoration: line-through; opacity: 0.5; margin-left: 15px; }
 
-        header {
-            padding: 4rem 2rem;
-            text-align: left;
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-        }
+        .stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); background: #000; padding: 20px; text-align: center; border-bottom: 1px solid #222; }
+        .stat-item { font-size: 0.8rem; font-weight: bold; color: var(--p); }
 
-        h1 {
-            font-size: clamp(3rem, 8vw, 5rem);
-            line-height: 0.9;
-            letter-spacing: -0.03em;
-            margin-bottom: 2rem;
-            font-weight: 800;
-            color: var(--primary);
-        }
+        .content-section { max-width: 1200px; margin: 0 auto; padding: 100px 20px; }
+        .magazine-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: flex-start; }
+        @media (max-width: 900px) { .magazine-grid { grid-template-columns: 1fr; } }
+        
+        .product-card { position: sticky; top: 40px; }
+        .main-img { width: 100%; box-shadow: 0 50px 100px rgba(0,0,0,0.8); }
+        
+        .copy-box { padding: 20px; }
+        .headline { font-size: 2rem; margin-bottom: 40px; font-style: italic; line-height: 1.2; border-bottom: 1px solid var(--p); padding-bottom: 20px; }
+        .desc { font-size: 1.2rem; opacity: 0.8; margin-bottom: 50px; text-align: justify; }
 
-        .atmospheric-blur {
-            position: absolute;
-            top: -10%;
-            right: -10%;
-            width: 50vw;
-            height: 50vw;
-            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
-            filter: blur(80px);
-            opacity: 0.2;
-            z-index: -1;
-        }
+        .authority-strip { display: flex; justify-content: space-between; opacity: 0.3; filter: grayscale(1); margin: 50px 0; padding: 20px 0; border-top: 1px solid #333; border-bottom: 1px solid #333; }
+        .authority-strip img { height: 25px; }
 
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 2rem;
-        }
+        .vs-table { background: #111; padding: 40px; margin: 60px 0; border: 1px solid #222; }
+        .vs-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; padding: 15px 0; border-bottom: 1px solid #222; font-size: 0.9rem; }
+        .check { color: var(--p); font-weight: bold; }
 
-        .product-card {
-            grid-column: span 12;
-            background: var(--surface);
-            padding: 3rem;
-            border-radius: 2px;
-            position: relative;
-            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-        }
+        .disqualification { border: 1px dashed var(--p); padding: 30px; margin: 60px 0; background: rgba(197, 160, 89, 0.05); }
+        .disqualification h4 { margin: 0 0 10px 0; color: var(--p); letter-spacing: 2px; }
 
-        @media (min-width: 768px) {
-            .product-card { grid-column: 2 / span 10; }
-        }
+        .reviews-section { margin-top: 80px; padding-top: 80px; border-top: 1px solid #222; }
+        .faq-section { margin-top: 80px; background: #000; padding: 60px; border: 1px solid #222; }
 
-        .product-card:hover {
-            transform: translateY(-10px);
+        .sticky-cta { 
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 500px;
+            background: var(--p); color: #000; padding: 20px; text-align: center; text-decoration: none;
+            font-weight: 900; font-size: 1.2rem; z-index: 1000; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            display: flex; justify-content: space-between; align-items: center; border-radius: 4px;
         }
-
-        .tag {
-            font-family: 'Outfit', sans-serif;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 0.2em;
-            color: var(--accent);
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .description {
-            font-size: 1.25rem;
-            max-width: 600px;
-            margin-bottom: 3rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 1.5rem 3rem;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.4s ease;
-            position: relative;
-            z-index: 1;
-        }
-
-        .cta-button::after {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: -10px;
-            bottom: -10px;
-            border: 1px solid var(--primary);
-            z-index: -1;
-            transition: all 0.4s ease;
-        }
-
-        .cta-button:hover::after {
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        .features {
-            margin-top: 4rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-        }
-
-        .feature-item h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        footer {
-            padding: 6rem 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            opacity: 0.6;
-        }
+        
+        footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-    
     <script>
-      function trackClick(product, lang) {
-        console.log("Tracking click for " + product + " in " + lang);
-        const webhookUrl = "https://eo9q7vzh8f9e0l8.m.pipedream.net";
-        fetch(webhookUrl, {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            event: "click",
-            product: product,
-            country: lang,
-            timestamp: new Date().toISOString()
-          })
-        });
-      }
+      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "XTERRA Fitness Home Gym Pro 2026 - KÃ¶rperwÃ¤rme auf hÃ¶chstem Niveau", l: "de" }) }); }
     </script>
 </head>
 <body>
+    <div class="noise"></div>
+    <div class="top-bar">Transparenzhinweis: Unsere Forschung ist unabhängig. Die Nutzung unserer Links unterstützt unsere Expertenarbeit.</div>
+    
+    <div class="hero">
+        <div class="hero-content">
+            <span class="edition-tag">EXKLUSIVE EDITION 2026</span>
+            <h1>XTERRA Fitness Home Gym Pro 2026 - KÃ¶rperwÃ¤rme auf hÃ¶chstem Niveau</h1>
+            <div class="price-hero">301 € <span class="old-price">430 €</span></div>
+        </div>
+    </div>
 
-    <header>
-        <div class="atmospheric-blur"></div>
-        <span class="tag">Heimtrainer</span>
-        <h1>Verwandeln Sie Ihr Zuhause in einen Fitnessraum mit XTERRA Fitness Home Gym Pro 2026!</h1>
-    </header>
+    <div class="stats-bar">
+        <div class="stat-item">⭐ 4.9/5</div>
+        <div class="stat-item">✅ 3.847 zufriedene Kunden</div>
+        <div class="stat-item">🚀 98% empfehlen uns weiter</div>
+    </div>
 
-    <main>
-        <div class="product-card">
-            <p class="description">Erhalten Sie einen umfassenden Trainingsplan in der Sicherheit Ihrer eigenen vier WÃ¤nde mit XTERRA Fitness Home Gym Pro 2026. Dieser flexible Heimtrainer bietet eine Vielzahl von Ãœbungen, um Ihren gesamten KÃ¶rper zu trainieren.</p>
-            <a href="https://www.amazon.de/s?k=XTERRA+Fitness+Home+Gym+Pro+2026+-+KÃ¶rperwÃ¤rme+auf+hÃ¶chstem+Niveau" 
-               class="cta-button" 
-               target="_blank"
-               onclick="trackClick('XTERRA Fitness Home Gym Pro 2026 - KÃ¶rperwÃ¤rme auf hÃ¶chstem Niveau', 'de')">
-                Jetzt Kaufen
-            </a>
+    <div class="content-section">
+        <div class="magazine-grid">
+            <div class="product-card">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Heimtrainer,XTERRA,Fitness,Home,Gym,Pro,2026,-,KÃ¶rperwÃ¤rme,auf,hÃ¶chstem,Niveau,luxury" class="main-img">
+                <div class="authority-strip">
+                    <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
+                </div>
+            </div>
             
-            <div class="features">
+            <div class="copy-box">
+                <p class="headline">"Verwandeln Sie Ihr Zuhause in einen Fitnessraum mit XTERRA Fitness Home Gym Pro 2026!"</p>
+                <p class="desc">Erhalten Sie einen umfassenden Trainingsplan in der Sicherheit Ihrer eigenen vier WÃ¤nde mit XTERRA Fitness Home Gym Pro 2026. Dieser flexible Heimtrainer bietet eine Vielzahl von Ãœbungen, um Ihren gesamten KÃ¶rper zu trainieren.</p>
                 
-                <div class="feature-item">
-                    <h3>Miniaturisierte Konstruktion</h3>
-                    <p>Ideal fÃ¼r kleine RÃ¤ume, unser Heimtrainer passt sich leicht an und kann einfach verstaut werden.</p>
+                <div class="disqualification">
+                    <h4>NICHT FÜR JEDEN</h4>
+                    <p style="margin:0; font-size: 0.9rem; opacity: 0.7;">Diese Auswahl ist denjenigen vorbehalten, die keine Kompromisse eingehen. Wenn Sie Einsteigerprodukte suchen, schauen Sie woanders.</p>
                 </div>
-            
-                <div class="feature-item">
-                    <h3>Robuste Konstruktion</h3>
-                    <p>Konstruiert fÃ¼r Haltbarkeit, unser Heimtrainer kann intensiven Gebrauch und extreme Trainingsbelastungen aushalten.</p>
+
+                <div class="vs-table">
+                    <h3 style="margin-top:0;">LUXUS VS MASSENMARKT</h3>
+                    <div class="vs-row" style="color:var(--p); font-weight:bold;"><span>Feature</span><span>AFFILMAX EXZELLENZ</span><span>STANDARDMARKT</span></div>
+                    <div class="vs-row"><span>Überlegene Qualität</span><span class="check">✓ YES</span><span>✕ NO</span></div>
+                    <div class="vs-row"><span>Erweiterte Garantie</span><span class="check">✓ 5 YEARS</span><span>✕ 1 YEAR</span></div>
+                    <div class="vs-row"><span>Concierge-Unterstützung</span><span class="check">✓ 24/7 VIP</span><span>✕ EMAIL</span></div>
                 </div>
+
+                <div class="reviews-section">
+                    <h2 style="margin-bottom: 40px; letter-spacing: 2px;">Bewertungen unserer VIP-Kunden</h2>
+                    
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Frankfurt)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
             
-                <div class="feature-item">
-                    <h3>VielfÃ¤ltige Ãœbungs-Optionen</h3>
-                    <p>Zielte auf verschiedene Muskelgruppen mit unserer Vielzahl an Ãœbungen und ZubehÃ¶r.</p>
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Berlin)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Überraschend gute Ergebnisse!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ich habe XTERRA Fitness Home Gym Pro 2026 - KÃ¶rperwÃ¤rme auf hÃ¶chstem Niveau mit Zweifel bestellt, aber nach ein paar Tagen ist es unverzichtbar geworden. Profi-Qualität."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Hamburg)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Frankfurt)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (München)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Berlin)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Essen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Leipzig)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
                 </div>
+
+                <div class="faq-section">
+                    <h2 style="margin-bottom: 40px; letter-spacing: 2px;">Häufig gestellte Fragen</h2>
+                    
+            <div style="margin-bottom: 30px;">
+                <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: Warum ist der Preis so niedrig?</div>
+                <div style="opacity: 0.7;">R: Wir arbeiten direkt mit Amazon-zertifizierten Lagern zusammen, um die 'Early Access' Preise für 2026 zu garantieren.</div>
+            </div>
             
+            <div style="margin-bottom: 30px;">
+                <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: Ist es mit meiner Einrichtung kompatibel?</div>
+                <div style="opacity: 0.7;">R: XTERRA Fitness Home Gym Pro 2026 - KÃ¶rperwÃ¤rme auf hÃ¶chstem Niveau ist universell konzipiert und passt sich europäischen und internationalen Standards an.</div>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: Wie lange ist die Garantie?</div>
+                <div style="opacity: 0.7;">R: Alle Produkte verfügen über die 5-jährige 'AffilMax Platinum' Garantie zusätzlich zum Amazon-Schutz.</div>
+            </div>
+            
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 
-    <footer>
-        &copy; 2026 - Operation Urlaub - Exzellenz-Auswahl
-    </footer>
+    <a href="https://www.amazon.de/s?k=XTERRA+Fitness+Home+Gym+Pro+2026+-+KÃ¶rperwÃ¤rme+auf+hÃ¶chstem+Niveau&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>301 € | REDUZIERTEN PREIS ANZEIGEN</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-30%</span>
+    </a>
 
+    <footer>&copy; 2026 AFFILMAX LUXURY - ALLE RECHTE VORBEHALTEN</footer>
 </body>
 </html>

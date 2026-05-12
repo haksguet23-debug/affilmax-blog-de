@@ -3,18 +3,18 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sole E95 Stationary Elliptical 2026 - Low-Impact Cardio | EXKLUSIVE EDITION 2026</title>
+    <title>Sole E95 Stationärer Elliptical 2026 - Cardio mit geringem Aufwand | EXKLUSIVE EDITION 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root { --p: #8fb935; --a: #fff; --bg: #1a1c1a; }
-        body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        :root { --p: #d97706; --a: #ffedd5; --bg: #120d0b; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
         .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
         .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Elliptical,Machines,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Elliptical,Maschinen,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Sole E95 Stationary Elliptical 2026 - Low-Impact Cardio", l: "de" }) }); }
+      function track() {
+        const data = { p: "Sole E95 Station\u00e4rer Elliptical 2026 - Cardio mit geringem Aufwand", l: "de", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EXKLUSIVE EDITION 2026</span>
-            <h1>Sole E95 Stationary Elliptical 2026 - Low-Impact Cardio</h1>
-            <div class="price-hero">869 € <span class="old-price">1159 €</span></div>
+            <h1>Sole E95 Stationärer Elliptical 2026 - Cardio mit geringem Aufwand</h1>
+            <div class="price-hero">383 € <span class="old-price">511 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Elliptical,Machines,Sole,E95,Stationary,Elliptical,2026,-,Low-Impact,Cardio,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Elliptical,Maschinen,Sole,E95,Stationärer,Elliptical,2026,-,Cardio,mit,geringem,Aufwand,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Get a Cardiovascular Workout without the Impact with Sole E95 Stationary Elliptical 2026"</p>
-                <p class="desc">Improve your heart health and burn calories with the Sole E95 Stationary Elliptical 2026. This low-impact elliptical machine offers a smooth and quiet workout experience, perfect for indoor exercise.</p>
+                <p class="headline">"Erhalten Sie ein kardiovaskuläres Training ohne den Aufwand mit dem Sole E95 Stationärer Elliptical 2026"</p>
+                <p class="desc">Verbessern Sie Ihre Herzgesundheit und verbrennen Sie Kalorien mit dem Sole E95 Stationärer Elliptical 2026. Diese elliptische Maschine bietet ein glattes und leises Trainingserlebnis, ideal für Indoor-Übungen.</p>
                 
                 <div class="disqualification">
                     <h4>NICHT FÜR JEDEN</h4>
@@ -111,43 +123,7 @@
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Berlin)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Essen)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Düsseldorf)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Stuttgart)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Hamburg)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Düsseldorf)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
@@ -156,8 +132,35 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Frankfurt)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Bremen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Frankfurt)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Berlin)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Überraschend gute Ergebnisse!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ich habe Sole E95 Stationärer Elliptical 2026 - Cardio mit geringem Aufwand mit Zweifel bestellt, aber nach ein paar Tagen ist es unverzichtbar geworden. Profi-Qualität."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Hamburg)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
@@ -165,19 +168,28 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Leipzig)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Düsseldorf)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Stuttgart)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Leipzig)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Berlin)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: Ist es mit meiner Einrichtung kompatibel?</div>
-                <div style="opacity: 0.7;">R: Sole E95 Stationary Elliptical 2026 - Low-Impact Cardio ist universell konzipiert und passt sich europäischen und internationalen Standards an.</div>
+                <div style="opacity: 0.7;">R: Sole E95 Stationärer Elliptical 2026 - Cardio mit geringem Aufwand ist universell konzipiert und passt sich europäischen und internationalen Standards an.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,8 +218,8 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.de/s?k=Sole+E95+Stationary+Elliptical+2026+-+Low-Impact+Cardio&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>869 € | REDUZIERTEN PREIS ANZEIGEN</span>
+    <a href="https://www.amazon.de/s?k=Sole+E95+Stationärer+Elliptical+2026+-+Cardio+mit+geringem+Aufwand&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>383 € | REDUZIERTEN PREIS ANZEIGEN</span>
         <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-25%</span>
     </a>
 

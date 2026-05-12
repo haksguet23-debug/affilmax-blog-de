@@ -3,18 +3,18 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Thermostats for Smart Home - Optimize Your Energy | EXKLUSIVE EDITION 2026</title>
+    <title>Thermometer für Smart Home - Energie optimieren | EXKLUSIVE EDITION 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
-        :root { --p: #c5a059; --a: #fff; --bg: #0a0a0a; }
-        body { font-family: 'Playfair Display', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
+        :root { --p: #d97706; --a: #ffedd5; --bg: #120d0b; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: #fff; margin:0; line-height: 1.6; }
         .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; background: url('https://grainy-gradients.vercel.app/noise.svg'); z-index: 100; }
         
         .top-bar { background: #000; padding: 10px; text-align: center; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.8; }
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Smart,Home,Automation,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Smart,Home,Automatisierung,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Smart Thermostats for Smart Home - Optimize Your Energy", l: "de" }) }); }
+      function track() {
+        const data = { p: "Thermometer f\u00fcr Smart Home - Energie optimieren", l: "de", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EXKLUSIVE EDITION 2026</span>
-            <h1>Smart Thermostats for Smart Home - Optimize Your Energy</h1>
-            <div class="price-hero">218 € <span class="old-price">352 €</span></div>
+            <h1>Thermometer für Smart Home - Energie optimieren</h1>
+            <div class="price-hero">927 € <span class="old-price">1220 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Smart,Home,Automation,Smart,Thermostats,for,Smart,Home,-,Optimize,Your,Energy,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Smart,Home,Automatisierung,Thermometer,für,Smart,Home,-,Energie,optimieren,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Revolutionize Your Home's Temperature Control with Smart Thermostats"</p>
-                <p class="desc">Stay comfortable, save energy, and reduce your carbon footprint with our range of smart thermostats. Smart learning algorithms adapt to your schedule and preferences, ensuring you're always in the right temperature zone.</p>
+                <p class="headline">"Revolutionieren Sie die Temperatursteuerung Ihres Smart Homes mit intelligenten Thermometern"</p>
+                <p class="desc">Bleiben Sie bequem, sparen Sie Energie und reduzieren Sie Ihren CO2-Fußabdruck mit unseren intelligenten Thermometern. Die intelligenten Lernalgorithmen passen sich Ihrem Tagesablauf und Ihren Vorlieben an, um Sie in der idealen Temperaturzone zu halten.</p>
                 
                 <div class="disqualification">
                     <h4>NICHT FÜR JEDEN</h4>
@@ -110,26 +122,17 @@
                     <h2 style="margin-bottom: 40px; letter-spacing: 2px;">Bewertungen unserer VIP-Kunden</h2>
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (Hamburg)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Köln)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Überraschend gute Ergebnisse!</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ich habe Thermometer für Smart Home - Energie optimieren mit Zweifel bestellt, aber nach ein paar Tagen ist es unverzichtbar geworden. Profi-Qualität."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Berlin)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Hamburg)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Düsseldorf)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
@@ -137,27 +140,9 @@
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Leipzig)</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Bremen)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Überraschend gute Ergebnisse!</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ich habe Smart Thermostats for Smart Home - Optimize Your Energy mit Zweifel bestellt, aber nach ein paar Tagen ist es unverzichtbar geworden. Profi-Qualität."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Carole M. (München)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Essen)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
@@ -165,19 +150,46 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Berlin)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Überraschend gute Ergebnisse!</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ich habe Smart Thermostats for Smart Home - Optimize Your Energy mit Zweifel bestellt, aber nach ein paar Tagen ist es unverzichtbar geworden. Profi-Qualität."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Essen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (München)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">12 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Bremen)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">6 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Köln)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Düsseldorf)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Köln)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: Ist es mit meiner Einrichtung kompatibel?</div>
-                <div style="opacity: 0.7;">R: Smart Thermostats for Smart Home - Optimize Your Energy ist universell konzipiert und passt sich europäischen und internationalen Standards an.</div>
+                <div style="opacity: 0.7;">R: Thermometer für Smart Home - Energie optimieren ist universell konzipiert und passt sich europäischen und internationalen Standards an.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.de/s?k=Smart+Thermostats+for+Smart+Home+-+Optimize+Your+Energy&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>218 € | REDUZIERTEN PREIS ANZEIGEN</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-38%</span>
+    <a href="https://www.amazon.de/s?k=Thermometer+für+Smart+Home+-+Energie+optimieren&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>927 € | REDUZIERTEN PREIS ANZEIGEN</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-24%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - ALLE RECHTE VORBEHALTEN</footer>

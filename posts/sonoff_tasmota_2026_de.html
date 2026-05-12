@@ -3,7 +3,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonoff Tasmota Smart Plug for Ultimate Smart Home Control | EXKLUSIVE EDITION 2026</title>
+    <title>Sonoff Tasmota : Die intelligente Steckdose für einen vollständigen Kontrolle über Ihr Zuhause | EXKLUSIVE EDITION 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;700&family=Outfit:wght@300;800&display=swap" rel="stylesheet">
     <style>
         :root { --p: #d97706; --a: #ffedd5; --bg: #120d0b; }
@@ -14,7 +14,7 @@
         
         .hero { 
             position: relative; height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Smart,Plugs,abstract') fixed center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/featured/1920x1080/?Hochpreisige,intelligente,Steckdosen,abstract') fixed center/cover;
         }
         .hero-content { text-align: center; max-width: 900px; padding: 20px; z-index: 10; }
         .edition-tag { color: var(--p); font-size: 0.9rem; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px; display: block; }
@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Sonoff Tasmota Smart Plug for Ultimate Smart Home Control", l: "de" }) }); }
+      function track() {
+        const data = { p: "Sonoff Tasmota : Die intelligente Steckdose f\u00fcr einen vollst\u00e4ndigen Kontrolle \u00fcber Ihr Zuhause", l: "de", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -69,8 +81,8 @@
     <div class="hero">
         <div class="hero-content">
             <span class="edition-tag">EXKLUSIVE EDITION 2026</span>
-            <h1>Sonoff Tasmota Smart Plug for Ultimate Smart Home Control</h1>
-            <div class="price-hero">323 € <span class="old-price">521 €</span></div>
+            <h1>Sonoff Tasmota : Die intelligente Steckdose für einen vollständigen Kontrolle über Ihr Zuhause</h1>
+            <div class="price-hero">719 € <span class="old-price">985 €</span></div>
         </div>
     </div>
 
@@ -83,15 +95,15 @@
     <div class="content-section">
         <div class="magazine-grid">
             <div class="product-card">
-                <img src="https://source.unsplash.com/featured/1200x1200/?Smart,Plugs,Sonoff,Tasmota,Smart,Plug,for,Ultimate,Smart,Home,Control,luxury" class="main-img">
+                <img src="https://source.unsplash.com/featured/1200x1200/?Hochpreisige,intelligente,Steckdosen,Sonoff,Tasmota,:,Die,intelligente,Steckdose,für,einen,vollständigen,Kontrolle,über,Ihr,Zuhause,luxury" class="main-img">
                 <div class="authority-strip">
                     <span>VOGUE</span><span>FORBES</span><span>GQ</span><span>WIRED</span>
                 </div>
             </div>
             
             <div class="copy-box">
-                <p class="headline">"Take Control of Your Home with the Sonoff Tasmota Smart Plug"</p>
-                <p class="desc">Say goodbye to inefficient lighting and appliances with the Sonoff Tasmota Smart Plug. This revolutionary smart plug allows you to control and monitor your energy usage, schedule on/off times, and receive real-time notifications.</p>
+                <p class="headline">"Nehmen Sie den Kontrolle über Ihr Zuhause mit der intelligenten Steckdose Sonoff Tasmota"</p>
+                <p class="desc">Sagen Sie Abschied von ineffizientem Licht und Geräten mit der intelligenten Steckdose Sonoff Tasmota. Diese revolutionäre Steckdose ermöglicht es Ihnen, Ihre Energieverbrauch zu überwachen und zu steuern, Programme für das Einschalten und Ausschalten zu erstellen und Echtzeit-Notifikationen zu erhalten.</p>
                 
                 <div class="disqualification">
                     <h4>NICHT FÜR JEDEN</h4>
@@ -110,18 +122,27 @@
                     <h2 style="margin-bottom: 40px; letter-spacing: 2px;">Bewertungen unserer VIP-Kunden</h2>
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Isabelle T. (Köln)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Leipzig)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Émilie C. (München)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Stuttgart)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Bremen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
@@ -129,8 +150,26 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Frankfurt)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Stuttgart)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Frankfurt)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Frankfurt)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
@@ -138,7 +177,7 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (München)</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Essen)</div>
                 <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
@@ -147,35 +186,8 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Leipzig)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Essen)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Aline R. (Bremen)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Berlin)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">14 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Bremen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">4 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Genau wie beschrieben, oder besser</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Das Design ist edel und die Leistung übertrifft meine Erwartungen. Freunde fragen schon, wo ich es herhabe."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
@@ -193,7 +205,7 @@
             
             <div style="margin-bottom: 30px;">
                 <div style="font-weight: 800; color: var(--p); margin-bottom: 10px;">Q: Ist es mit meiner Einrichtung kompatibel?</div>
-                <div style="opacity: 0.7;">R: Sonoff Tasmota Smart Plug for Ultimate Smart Home Control ist universell konzipiert und passt sich europäischen und internationalen Standards an.</div>
+                <div style="opacity: 0.7;">R: Sonoff Tasmota : Die intelligente Steckdose für einen vollständigen Kontrolle über Ihr Zuhause ist universell konzipiert und passt sich europäischen und internationalen Standards an.</div>
             </div>
             
             <div style="margin-bottom: 30px;">
@@ -206,9 +218,9 @@
         </div>
     </div>
 
-    <a href="https://www.amazon.de/s?k=Sonoff+Tasmota+Smart+Plug+for+Ultimate+Smart+Home+Control&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>323 € | REDUZIERTEN PREIS ANZEIGEN</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-38%</span>
+    <a href="https://www.amazon.de/s?k=Sonoff+Tasmota+:+Die+intelligente+Steckdose+für+einen+vollständigen+Kontrolle+über+Ihr+Zuhause&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
+        <span>719 € | REDUZIERTEN PREIS ANZEIGEN</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-27%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - ALLE RECHTE VORBEHALTEN</footer>

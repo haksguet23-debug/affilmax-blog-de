@@ -59,7 +59,19 @@
         footer { text-align: center; padding: 100px 0 150px; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
     </style>
     <script>
-      function track() { fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { method: "POST", mode: "no-cors", body: JSON.stringify({ p: "Revolutionieren Sie Ihr Wohlbefinden: Pro Rejuvenation-WassergerÃ¤t", l: "de" }) }); }
+      function track() {
+        const data = { p: "Revolutionieren Sie Ihr Wohlbefinden: Pro Rejuvenation-Wasserger\u00c3\u00a4t", l: "de", t: new Date().toISOString() };
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon("https://eo9q7vzh8f9e0l8.m.pipedream.net", JSON.stringify(data));
+        } else {
+          fetch("https://eo9q7vzh8f9e0l8.m.pipedream.net", { 
+            method: "POST", 
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+            keepalive: true
+          }).catch(() => {});
+        }
+      }
     </script>
 </head>
 <body>
@@ -70,7 +82,7 @@
         <div class="hero-content">
             <span class="edition-tag">EXKLUSIVE EDITION 2026</span>
             <h1>Revolutionieren Sie Ihr Wohlbefinden: Pro Rejuvenation-WassergerÃ¤t</h1>
-            <div class="price-hero">867 € <span class="old-price">1112 €</span></div>
+            <div class="price-hero">482 € <span class="old-price">777 €</span></div>
         </div>
     </div>
 
@@ -110,18 +122,27 @@
                     <h2 style="margin-bottom: 40px; letter-spacing: 2px;">Bewertungen unserer VIP-Kunden</h2>
                     
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (München)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Hat meine Routine verändert</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt kann ich nicht mehr darauf verzichten. Der Support hat meine Frage in weniger als 2 Stunden beantwortet."</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Nicolas P. (Essen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Frankfurt)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Bremen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (Stuttgart)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Überraschend gute Ergebnisse!</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Ich habe Revolutionieren Sie Ihr Wohlbefinden: Pro Rejuvenation-WassergerÃ¤t mit Zweifel bestellt, aber nach ein paar Tagen ist es unverzichtbar geworden. Profi-Qualität."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
@@ -129,55 +150,46 @@
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Köln)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Lucas G. (Stuttgart)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">7 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Leipzig)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Marc V. (Frankfurt)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">11 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Stuttgart)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">13 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Jérôme L. (München)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">10 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Ich war skeptisch... ABER es funktioniert wirklich</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Ehrlich gesagt habe ich anfangs nicht daran geglaubt. Aber jetzt, 12 Tage später, sehe ich den Unterschied."</div>
-                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
-            </div>
-            
-            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
-                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Thomas D. (Köln)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">3 d</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Essen)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">8 d</div>
                 <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
                 <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
             <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
+                <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐</div>
+                <div style="font-weight: bold; margin: 5px 0;">Carole M. (Düsseldorf)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">5 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Keine Reue, sehr empfehlenswert</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Meine Zögerlichkeit dauerte 2 Stunden. Jetzt, 8 Tage später, bereue ich meine Wahl absolut nicht."</div>
+                <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
+            </div>
+            
+            <div style="background: #111; padding: 25px; margin-bottom: 20px; border-left: 3px solid var(--p);">
                 <div style="color: var(--p); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
-                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Düsseldorf)</div>
-                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">2 d</div>
-                <div style="font-weight: 700; margin-bottom: 10px;">📌 Bestes Preis-Leistungs-Verhältnis</div>
-                <div style="font-size: 0.95rem; opacity: 0.8;">"Sehr schnell erhalten. Die Qualität stimmt definitiv, nichts im Vergleich zu den billigen Alternativen."</div>
+                <div style="font-weight: bold; margin: 5px 0;">Sophie B. (Stuttgart)</div>
+                <div style="font-size: 0.7rem; opacity: 0.5; margin-bottom: 15px;">9 d</div>
+                <div style="font-weight: 700; margin-bottom: 10px;">📌 Kein Betrug, das ist seriös</div>
+                <div style="font-size: 0.95rem; opacity: 0.8;">"Viel Angst vor der Zahlung, aber es ist transparent und effektiv. 10/10."</div>
                 <div style="margin-top: 15px; font-size: 0.8rem; opacity: 0.4;">Nützlich? 👍 💬 Antworten</div>
             </div>
             
@@ -207,8 +219,8 @@
     </div>
 
     <a href="https://www.amazon.de/s?k=Revolutionieren+Sie+Ihr+Wohlbefinden:+Pro+Rejuvenation-WassergerÃ¤t&tag=confortbure07-21" class="sticky-cta" onclick="track()" target="_blank">
-        <span>867 € | REDUZIERTEN PREIS ANZEIGEN</span>
-        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-22%</span>
+        <span>482 € | REDUZIERTEN PREIS ANZEIGEN</span>
+        <span style="font-size: 0.8rem; background: #000; color: #fff; padding: 5px 10px;">-38%</span>
     </a>
 
     <footer>&copy; 2026 AFFILMAX LUXURY - ALLE RECHTE VORBEHALTEN</footer>
